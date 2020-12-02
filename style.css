@@ -1,0 +1,140 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000103;
+    color: #f2f5fa;
+    font-size: 16px;
+    line-height: 20px;
+}
+header{
+    height: 80px;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+a{
+    color: #fff;
+}
+a:hover{
+    text-decoration: none;
+}
+header ul{
+    padding-top: 10px;
+    list-style-type: none;
+}
+header ul li{
+    font-size: 20px;
+    display: inline;
+    margin-right: 50px;
+}
+.page{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden; 
+}
+.page__wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.page__pagination{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translate(0px, -50%);
+    display: flex;
+    flex-direction: column;
+}
+.page__bullet{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px 0;
+    border-radius: 50%;
+    transition: background-color 0.3s ease 0s;
+}
+.page__bullet_active{
+    background-color: #c0c5ce;;
+}
+.page__scroll{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.page__drag-scroll{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.screen{
+    flex: 1 0 100%;
+    position: relative;
+}
+.screen__content{
+    padding: 100px 25px 25px 25px;
+    position: relative;
+    z-index: 2;
+}
+.screen__title{
+    padding-top: 110px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 65px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.screen__content p{
+    font-size: 20px;
+}
+.screen__body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.screen__image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.screen__image img{
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.media {
+    padding: 30px 100px;
+  }
+.media-body {
+    text-align: left;
+}
+.media-body p{
+    color: #c0c5ce;
+    font-size: 18px;
+}
+.project-content{
+    max-width: 360px;
+    margin: 20px;
+    padding: 40px 60px 40px 40px;
+    border-radius: 12px;
+    background-color: #191e25;
+}
+.tema{
+    padding-bottom: 20px;
+}
