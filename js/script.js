@@ -1,3 +1,8 @@
+function openmenu(){
+    var element = document.getElementById('main-menu');
+    element.classList.toggle('csstoggle')
+}
+
 let pageSlider = new Swiper('.page',{
     
     wrapperClass: "page__wrapper",

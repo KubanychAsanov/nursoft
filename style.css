@@ -1,3 +1,6 @@
+.mobNav, .icons{
+    display: none;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #000103;
@@ -8,10 +11,7 @@ body {
 header{
     height: 80px;
     z-index: 50;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-a{
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 a:hover{
     text-decoration: none;
@@ -24,6 +24,9 @@ header ul li{
     font-size: 20px;
     display: inline;
     margin-right: 50px;
+}
+.navbar a{
+    color: black;
 }
 .page{
     position: fixed;
@@ -42,22 +45,22 @@ header ul li{
 .page__pagination{
     position: absolute;
     top: 50%;
-    right: 50px;
+    right: 20px;
     transform: translate(0px, -50%);
     display: flex;
     flex-direction: column;
 }
 .page__bullet{
-    width: 15px;
-    height: 15px;
+    width: 7px;
+    height: 7px;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     margin: 10px 0;
     border-radius: 50%;
     transition: background-color 0.3s ease 0s;
 }
 .page__bullet_active{
-    background-color: #c0c5ce;;
+    background-color: #70747c;;
 }
 .page__scroll{
     position: absolute;
@@ -129,12 +132,69 @@ header ul li{
     font-size: 18px;
 }
 .project-content{
-    max-width: 360px;
     margin: 20px;
-    padding: 40px 60px 40px 40px;
+    padding: 40px;
     border-radius: 12px;
     background-color: #191e25;
+    box-shadow: 7px 7px 5px #40495a;
 }
 .tema{
     padding-bottom: 20px;
+}
+.contact {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+.contact .icon{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.text-muted{
+    margin-top: 20px;
+    color: #6c757d;
+}
+.contact-form .row, .input{
+    padding-bottom: 20px;
+  }
+  .submitBnt{
+    background-color: #f89d36;
+    color: #fff;
+    margin-bottom: 70px;
+  }
+@media (max-width: 1015px) {
+    .menu-drop, .page__pagination,.page__scroll{
+        display: none;
+    }
+    .mobNav{
+        display: block;
+        z-index: 3;
+    }
+    .csstoggle{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        left: 0;
+        top: 0;
+    }
+    .csstoggle li {
+        font-size: 15px;
+        margin: 0;
+        padding: 20px;
+        display: block;
+        margin-left: 20px;
+        text-transform: uppercase;
+      
+    }
+    .icons a{
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .project-content{
+        margin: 20px 70px;
+    }
 }
