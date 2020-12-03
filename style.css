@@ -81,6 +81,7 @@ header ul li{
 .screen{
     flex: 1 0 100%;
     position: relative;
+    flex-direction: column;
 }
 .screen__content{
     padding: 100px 25px 25px 25px;
@@ -156,18 +157,32 @@ header ul li{
 .contact-form .row, .input{
     padding-bottom: 20px;
   }
-  .submitBnt{
+.submitBnt{
     background-color: #f89d36;
     color: #fff;
     margin-bottom: 70px;
-  }
+}
 @media (max-width: 1015px) {
+    .screen{
+        display: block;
+        overflow: hidden;
+    }
+    .navbar a{
+        color: #fff;
+    }
     .menu-drop, .page__pagination,.page__scroll{
         display: none;
     }
     .mobNav{
         display: block;
         z-index: 3;
+    }
+    .fa-bars{
+        color: black;
+
+    }
+    .active{
+        color: #fff;
     }
     .csstoggle{
         display: flex;

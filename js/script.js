@@ -1,6 +1,8 @@
 function openmenu(){
     var element = document.getElementById('main-menu');
+    var element1 = document.getElementById('toggle-menu');
     element.classList.toggle('csstoggle')
+    element1.classList.toggle('active')
 }
 
 let pageSlider = new Swiper('.page',{
