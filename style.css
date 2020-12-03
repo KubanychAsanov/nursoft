@@ -164,7 +164,7 @@ header ul li{
 }
 @media (max-width: 1015px) {
     .screen{
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .navbar a{
         color: #fff;
