@@ -164,7 +164,6 @@ header ul li{
 }
 @media (max-width: 1015px) {
     .screen{
-        display: block;
         overflow: hidden;
     }
     .navbar a{
